@@ -1,0 +1,11 @@
+{
+  "clangd.arguments": [
+    "--compile-commands-dir=build",
+    "--query-driver=*/arm-none-eabi-*"
+  ],
+  "C_Cpp.default.includePath": [
+    "C:/blocksds/core/libs/libnds/include",
+    "C:/blocksds/core/libs/libnds/include/nds",
+    "C:/blocksds/core/sys/include"
+  ]
+}
