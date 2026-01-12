@@ -11,27 +11,37 @@ void drawTopBar()
     consoleSelect(&topScreen);
     consoleClear();
 
-    iprintf("\x1b[2;0H################################");
-    iprintf("\x1b[3;0H#                              #");
-    iprintf("\x1b[4;0H#      FEARLESS  LAUNCHER      #");
-    iprintf("\x1b[5;0H#                              #");
-    iprintf("\x1b[6;0H################################");
+    iprintf("================================\n");
+    iprintf("        FEARLESS  OS\n");
+    iprintf("   Custom Nintendo DS Firmware\n");
+    iprintf("================================\n\n");
+
+    iprintf("LEFT / RIGHT  : Select\n");
+    iprintf("A             : Launch\n");
 }
+
+
+
 
 void drawBottomMenu()
 {
     consoleSelect(&bottomScreen);
     consoleClear();
 
-    iprintf("\n\n           FEARLESS OS\n");
-    iprintf("       LEFT/RIGHT to select\n");
-    iprintf("           A to launch\n\n");
+    iprintf("---------- MAIN MENU -----------\n\n");
 
     if (option == 0)
-        iprintf("   [ R4 MENU ]    FEARLESS");
+    {
+        iprintf("> [ R4 MENU ]      CUSTOM MENU\n");
+    }
     else
-        iprintf("     R4 MENU    [ FEARLESS ]");
+    {
+        iprintf("  R4 MENU      > [ CUSTOM MENU ]\n");
+    }
+
+    iprintf("\n--------------------------------\n");
 }
+
 
 int main(void)
 {
